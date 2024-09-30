@@ -43,11 +43,5 @@ class nilai{
         return $this->uas;
     }
 
-    // method 
-    public function hitungtotal(){
-        echo "Public : " . $visibility->public . "<br>";
-        echo "Protected :" . $visibility->protected . "<br>";
-        echo "Private :" . $visibility->private . "<br>";
-    }
     
 }
