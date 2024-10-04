@@ -14,6 +14,8 @@ class nilai{
         }
     }
 
+    //setter
+
     public function setUts($uts){
         if($uts <= 100 && $uts >= 0){
             $this->uts = $uts;
@@ -43,5 +45,10 @@ class nilai{
         return $this->uas;
     }
 
+    //method
+    function hitungtotal(){
+        $nilaitotal=0.30*$this->tugas+0.35*$this->uts+0.35*$this->uas;
+        return $nilaitotal;
+    }
     
 }

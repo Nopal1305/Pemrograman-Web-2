@@ -28,13 +28,26 @@ include "nilai.php";
 
             echo "<br>";
 
-            $obj = new visibility();
-            $obj->tampilkanproperty();
+            $visibility = new visibility();
+            $visibility ->tampilkanproperty();
 
             echo "Ini akses di luar kelas  <br>";
             echo "Public :" . $visibility->public . "<br>";
-            echo "Private :" . $visibility->private . "<br>";
-            echo "Protected :" . $visibility->protected . "<br>";
+            //echo "Private :" . $visibility->private . "<br>";
+            //echo "Protected :" . $visibility->protected . "<br>";
+
+            echo "<br><br>";
+
+            echo "Nilai Pemrograman Web : <br>";
+            $nilai = new nilai();
+            $nilai->setTugas(80);
+            $nilai->setUts(75);
+            $nilai->setUas(79);
+
+            echo "Nilai Tugas : ".$nilai->getTugas(). "<br>";
+            echo "Nilai Uts : ".$nilai->getUts(). "<br>";
+            echo "Nilai Uas : ".$nilai->getUas(). "<br>";
+            echo "Nilai Rata-Rata : ".$nilai->hitungtotal();
         ?>
     </div>
 </body>
